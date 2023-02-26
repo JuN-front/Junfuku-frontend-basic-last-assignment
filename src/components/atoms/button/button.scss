@@ -11,21 +11,20 @@
     justify-content: center;
     align-items: center;
     transition: 0.2s ease;
-}
 
-@media(max-width: $breakpoint-lg){
-    width: 150px;
-    height: 55px;
-}
+    @media(max-width: $breakpoint-lg){
+        width: 150px;
+        height: 55px;
+    }
+    
+    @media(max-width: $breakpoint-md){
+        width: 180px;
+        height: 45px;
+    }
 
-@media(max-width: $breakpoint-md){
-    width: 180px;
-    height: 45px;
-}
-
-
-&:hover{
-    color: $white;
-    background-color: $orange_bistre;
+    &:hover{
+        color: $white;
+        background-color: $orange_bistre;
+    }
 }
 
