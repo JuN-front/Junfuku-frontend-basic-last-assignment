@@ -1,0 +1,36 @@
+@use "../../variables" as *;
+
+.Message{
+    font-weight: 400;
+    text-align: center;
+    padding: 50px 20px;
+
+    h1{
+        font-family: $fontfamily-mincho;
+        font-size: $fontsize-xl;
+        line-height: 54px;
+        margin-bottom: 10px;
+      }
+
+      p{
+        font-family: $fontfamily-mincho;
+        font-size: $fontsize-s;
+        line-height: 36px;
+        margin: 0;
+      }
+
+      @media (max-width: $breakpoint-lg) {
+        padding: 30px 20px;
+
+        h1{
+          font-size: $fontsize-l;
+          line-height: 30px;
+          margin-bottom: 6px;
+        }
+
+        p{
+          line-height: 28px;
+        }
+}
+
+}
