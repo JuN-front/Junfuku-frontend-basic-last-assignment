@@ -5,7 +5,7 @@
     text-align: center;
     padding: 50px 20px;
 
-    h1{
+    h2{
         font-family: $fontfamily-mincho;
         font-size: $fontsize-xl;
         line-height: 54;
@@ -24,12 +24,12 @@
 
         h1{
           font-size: $fontsize-l;
-          line-height: 30px;
+          line-height: 30;
           margin-bottom: 6px;
         }
 
         p{
-          line-height: 28px;
+          line-height: 28;
         }
 }
 
