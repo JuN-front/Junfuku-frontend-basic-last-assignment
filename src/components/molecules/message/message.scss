@@ -8,28 +8,27 @@
     h2{
         font-family: $fontfamily-mincho;
         font-size: $fontsize-xl;
-        line-height: 54;
+        line-height: 1.5;
         margin-bottom: 10px;
       }
 
       p{
-        font-family: $fontfamily-gothic;
         font-size: $fontsize-s;
-        line-height: 36px;
+        line-height: 2.5;
         margin: 0;
       }
 
       @media (max-width: $breakpoint-lg) {
         padding: 30px 20px;
 
-        h1{
+        h2{
           font-size: $fontsize-l;
-          line-height: 30;
+          line-height: 1.5;
           margin-bottom: 6px;
         }
 
         p{
-          line-height: 28;
+          line-height: 2.0;
         }
 }
 
