@@ -1,0 +1,57 @@
+@use "../../variables" as *;
+
+.card {
+  border: none;
+  border-radius: 0%;
+
+  @media (max-width: $breakpoint-md) {
+    transition: none;
+  }
+
+  .overwrap {
+    overflow: hidden;
+    margin-bottom: 0;
+
+    .picture {
+      transition: 0.5s ease;
+      border-radius: 0%;
+
+      &:hover {
+        transform: scale(1.2);
+
+        @media (max-width: $breakpoint-md) {
+          transform: none;
+        }
+      }
+    }
+  }
+
+  .vector {
+    position: absolute;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid $white;
+  }
+
+  .title {
+    position: absolute;
+    font-size: $fontsize-l;
+    font-weight: 700;
+    color: $orange_bistre;
+    left: 6px;
+    line-height: 29px;
+  }
+
+  .body {
+    background-color: $white_smoke;
+    padding: 32px;
+
+    .text {
+      line-height: 33.4px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      margin: 0 auto;
+    }
+  }
+}
