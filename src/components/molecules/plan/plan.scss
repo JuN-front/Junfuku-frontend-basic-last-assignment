@@ -1,0 +1,68 @@
+@use "../../variables" as *;
+
+.set {
+  .plan {
+    text-align: center;
+    width: 100%;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 24px;
+    }
+    .daytime {
+      background-color: $orange_zorba;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h3 {
+        color: $white;
+        margin-bottom: 0;
+        font-size: $fontsize-l;
+      }
+    }
+    .decoration {
+      border: 1px solid $gray_gainsboro;
+
+      .price {
+        background-color: $gray_desertStorm;
+        padding: 24px 0;
+        height: 142px;
+        h3 {
+          font-size: $fontsize-xxl;
+          font-weight: 700;
+          color: $orange_bistre;
+          margin-bottom: 16px;
+          .yen {
+            font-size: $fontsize-l;
+            margin-right: 4px;
+          }
+        }
+        .monthly {
+          font-size: $fontsize-s;
+          font-weight: 400;
+          color: $black;
+        }
+      }
+      .detail {
+        .list {
+          padding: 0px;
+          margin: 0;
+          font-size: $fontsize-s;
+
+          .list-items {
+            list-style: none;
+            padding: 20px;
+            border-top: 1px solid $gray_gainsboro;
+          }
+        }
+      }
+    }
+  }
+}
+.plan:nth-child(even) {
+  outline: 5px solid $orange_bistre;
+  outline-offset: -5px;
+
+  .standard {
+    background-color: $orange_bistre;
+  }
+}
