@@ -9,15 +9,18 @@
       margin-bottom: 24px;
     }
 
-    .daytime {
-      color: $white;
+    .options {
       background-color: $orange_zorba;
-      font-size: $fontsize-l;
       padding: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 0;
+
+      h3 {
+        color: $white;
+        font-size: $fontsize-l;
+        margin-bottom: 0;
+      }
     }
 
     .decoration {
@@ -65,7 +68,7 @@
   outline: 5px solid $orange_bistre;
   outline-offset: -5px;
 
-  .standard {
+  .options {
     background-color: $orange_bistre;
   }
 }
