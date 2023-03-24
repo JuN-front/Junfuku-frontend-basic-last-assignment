@@ -15,6 +15,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      font-weight: 700;
 
       h3 {
         color: $white;
@@ -25,6 +26,7 @@
 
     .decoration {
       border: 1px solid $gray_gainsboro;
+      display: flex;
 
       .price {
         color: $orange_bistre;
@@ -34,6 +36,12 @@
         height: 142px;
         font-weight: 700;
 
+        h3 {
+          color: $orange_bistre;
+          font-size: $fontsize-xxl;
+          margin: 0;
+          text-align: center;
+        }
         .yen {
           font-size: $fontsize-l;
           margin-right: 4px;
@@ -43,6 +51,7 @@
           font-size: $fontsize-s;
           font-weight: 400;
           color: $black;
+          margin: 0;
         }
       }
 
@@ -56,6 +65,7 @@
             list-style: none;
             padding: 20px;
             border-top: 1px solid $gray_gainsboro;
+            background-color: $white;
           }
         }
       }
