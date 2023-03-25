@@ -21,6 +21,8 @@
         color: $white;
         font-size: $fontsize-l;
         margin: 0;
+        font-weight: 700;
+        text-align: center;
       }
     }
 
@@ -29,19 +31,21 @@
       display: flex;
 
       .price {
-        color: $orange_bistre;
         background-color: $gray_desertStorm;
-        font-size: $fontsize-xxl;
         padding: 24px 0;
         height: 142px;
         font-weight: 700;
+        align-items: center;
+        justify-content: center;
 
         h3 {
           color: $orange_bistre;
           font-size: $fontsize-xxl;
+          font-weight: 700;
           margin: 0;
           text-align: center;
         }
+
         .yen {
           font-size: $fontsize-l;
           margin-right: 4px;
