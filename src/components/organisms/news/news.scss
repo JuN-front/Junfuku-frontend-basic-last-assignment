@@ -1,0 +1,50 @@
+@use "../../variables" as *;
+
+.title {
+  color: $black;
+  font-style: normal;
+  font-size: $fontsize-xxl;
+  font-family: $fontfamily-mincho;
+
+  caption {
+    color: $black;
+    font-style: normal;
+    font-size: $fontsize-m;
+    font-family: $fontfamily-gothic;
+  }
+}
+
+.articles {
+  background-color: $white;
+  border: 1px solid $gray_gainsboro;
+
+  article {
+    padding: 20px;
+    border-bottom: 1px solid $gray_gainsboro;
+
+    &:nth-child(5) {
+      border: none;
+    }
+
+    time {
+      color: $gray_nobel;
+      font-size: $fontsize-xs;
+    }
+
+    .news {
+      color: $black;
+      font-family: $fontfamily-gothic;
+      font-size: $fontsize-m;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.notification {
+  float: right;
+  margin-top: 30px;
+}
