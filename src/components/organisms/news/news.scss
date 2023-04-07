@@ -1,0 +1,47 @@
+@use "../../variables" as *;
+
+.contents {
+  padding-left: 0px;
+  margin-bottom: 0px;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 85px;
+    background-color: $white;
+    border-top: 1px solid $gray_gainsboro;
+    border-left: 1px solid $gray_gainsboro;
+    border-right: 1px solid $gray_gainsboro;
+    cursor: pointer;
+
+    time {
+      margin: 0px 0px 10px;
+      font-size: 12px;
+      line-height: 12px;
+      color: $gray_nobel;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23px;
+      margin-bottom: 0px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    h2:hover {
+      color: $orange_bistre;
+    }
+  }
+  article:last-child {
+    border-bottom: 1px solid $gray_gainsboro;
+  }
+}
+.notice {
+  text-align: right;
+
+  .more {
+    margin-top: 30px;
+  }
+}
