@@ -30,10 +30,11 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      transition: 0.2s ease;
     }
 
     h2:hover {
-      color: $orange_bistre;
+      color: $gray_gainsboro;
     }
   }
 

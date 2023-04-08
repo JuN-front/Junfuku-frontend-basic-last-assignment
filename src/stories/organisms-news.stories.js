@@ -3,4 +3,4 @@ import "../components/organisms/news/news.scss";
 
 export default { title: "Organisms/News" };
 
-export const Events = () => Item_News;
+export const News = () => Item_News;
