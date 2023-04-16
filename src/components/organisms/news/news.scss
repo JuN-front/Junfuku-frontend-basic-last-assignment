@@ -1,5 +1,7 @@
 @use "../../variables" as *;
 
+.news{
+
 .contents {
   padding-left: 0px;
   margin-bottom: 0px;
@@ -42,12 +44,8 @@
     border-bottom: 1px solid $gray_gainsboro;
   }
 }
-.list {
-  text-align: right;
 
   .news-and-events-more {
-    margin-bottom: 35px;
     text-align:right;
-    display: block;
   }
 }
