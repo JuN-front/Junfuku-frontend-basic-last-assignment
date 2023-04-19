@@ -45,8 +45,19 @@
   }
 }
 
-  .news-and-events-more {
-    text-align:right;
-    margin: 0;
+.news-and-events-more {
+  cursor: pointer;
+  color: $black;
+  text-decoration: none;
+  font-size: $fontsize-s;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+
+  &:hover {
+    color: $gray_nobel;
   }
+}
+
 }
