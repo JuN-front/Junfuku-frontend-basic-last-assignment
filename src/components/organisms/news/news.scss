@@ -8,6 +8,7 @@
 
   a{
     text-decoration: none;
+  }
     
     article {
     background-color: $white;
@@ -46,7 +47,6 @@
 
   article:last-child {
     border-bottom: 1px solid $gray_gainsboro;
-  }
   }
 }
 
