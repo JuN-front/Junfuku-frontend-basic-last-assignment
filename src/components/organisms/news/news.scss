@@ -6,9 +6,11 @@
   padding-left: 0px;
   margin-bottom: 30px;
 
-  article {
-    background-color: $white;
+  a{
     text-decoration: none;
+    
+    article {
+    background-color: $white;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -44,6 +46,7 @@
 
   article:last-child {
     border-bottom: 1px solid $gray_gainsboro;
+  }
   }
 }
 
