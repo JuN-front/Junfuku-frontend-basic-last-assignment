@@ -6,47 +6,51 @@
   padding-left: 0px;
   margin-bottom: 30px;
     
-    article {
-    background-color: $white;
+  a{
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    height: 85px;
-    border-top: 1px solid $gray_gainsboro;
-    border-left: 1px solid $gray_gainsboro;
-    border-right: 1px solid $gray_gainsboro;
-    cursor: pointer;
 
-    article:hover {
-      color: $orange_bistre;
+    article {
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      height: 85px;
+      border-top: 1px solid $gray_gainsboro;
+      border-left: 1px solid $gray_gainsboro;
+      border-right: 1px solid $gray_gainsboro;
+      cursor: pointer;
+  
+      article:hover {
+        color: $orange_bistre;
+      }
+  
+      time {
+        margin: 0px 0px 10px;
+        font-size: $fontsize-xs;
+        line-height: 12px;
+        color: $gray_nobel;
+      }
+  
+      h2 {
+        font-size: $fontsize-m;
+        text-decoration: none;
+        font-weight: 400;
+        line-height: 23px;
+        margin-bottom: 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: 0.2s ease;
+        color: $black;
+      }
+      
     }
-
-    time {
-      margin: 0px 0px 10px;
-      font-size: $fontsize-xs;
-      line-height: 12px;
-      color: $gray_nobel;
+  
+    :last-child {
+      border-bottom: 1px solid $gray_gainsboro;
     }
-
-    h2 {
-      font-size: $fontsize-m;
-      text-decoration: none;
-      font-weight: 400;
-      line-height: 23px;
-      margin-bottom: 0px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      transition: 0.2s ease;
-      color: $black;
-    }
-    
   }
-
-  article:last-child {
-    border-bottom: 1px solid $gray_gainsboro;
-  }
+   
 }
 
 .announcement {
