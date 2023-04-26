@@ -44,7 +44,7 @@
       }
     }
 
-    :last-child {
+    :last-child > article {
       border-bottom: 1px solid $gray_gainsboro;
     }
   }
