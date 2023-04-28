@@ -8,11 +8,6 @@
     a {
       text-decoration: none;
 
-      a:hover {
-        color: $orange_bistre;
-        display: block;
-      }
-
       article {
         background-color: $white;
         display: flex;
@@ -43,6 +38,10 @@
         text-overflow: ellipsis;
         transition: 0.2s ease;
         color: $black;
+
+        article:hover {
+          color: $orange_bistre;
+        }
       }
     }
 
