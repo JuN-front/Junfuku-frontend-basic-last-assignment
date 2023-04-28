@@ -5,12 +5,13 @@
     padding-left: 0px;
     margin-bottom: 30px;
 
-    .contents:hover::before {
-      color: $orange_bistre;
-    }
-
     a {
       text-decoration: none;
+
+      a:hover {
+        color: $orange_bistre;
+        display: block;
+      }
 
       article {
         background-color: $white;
