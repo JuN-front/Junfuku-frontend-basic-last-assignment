@@ -7,6 +7,11 @@
 
     a {
       text-decoration: none;
+
+      &:hover {
+        color: $orange_bistre;
+      }
+
       article {
         background-color: $white;
         display: flex;
@@ -17,10 +22,6 @@
         border-left: 1px solid $gray_gainsboro;
         border-right: 1px solid $gray_gainsboro;
         cursor: pointer;
-
-        &:hover {
-          color: $orange_bistre;
-        }
       }
 
       time {
