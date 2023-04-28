@@ -5,7 +5,7 @@
     padding-left: 0px;
     margin-bottom: 30px;
 
-    &:hover {
+    .contents:hover::before {
       color: $orange_bistre;
     }
 
