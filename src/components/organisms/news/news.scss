@@ -17,10 +17,10 @@
         border-left: 1px solid $gray_gainsboro;
         border-right: 1px solid $gray_gainsboro;
         cursor: pointer;
-      }
 
-      article:hover {
-        color: $orange_bistre;
+        &:hover {
+          color: $orange_bistre;
+        }
       }
 
       time {
