@@ -38,10 +38,10 @@
         text-overflow: ellipsis;
         transition: 0.2s ease;
         color: $black;
+      }
 
-        article:hover {
-          color: $orange_bistre;
-        }
+      article:hover {
+        color: $orange_bistre;
       }
     }
 
