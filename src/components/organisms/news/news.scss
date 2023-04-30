@@ -40,7 +40,7 @@
         color: $black;
       }
 
-      article:hover {
+      article:hover > h2 {
         color: $orange_bistre;
       }
     }
