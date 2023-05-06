@@ -1,0 +1,65 @@
+@use "../../variables" as *;
+
+.news {
+  .contents {
+    padding-left: 0px;
+    margin-bottom: 30px;
+
+    a {
+      text-decoration: none;
+
+      article {
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        height: 85px;
+        border-top: 1px solid $gray_gainsboro;
+        border-left: 1px solid $gray_gainsboro;
+        border-right: 1px solid $gray_gainsboro;
+        cursor: pointer;
+      }
+
+      time {
+        margin: 0px 0px 10px;
+        font-size: $fontsize-xs;
+        line-height: 12px;
+        color: $gray_nobel;
+      }
+
+      h2 {
+        font-size: $fontsize-m;
+        text-decoration: none;
+        font-weight: 400;
+        line-height: 23px;
+        margin-bottom: 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: 0.2s ease;
+        color: $black;
+      }
+
+      article:hover > h2 {
+        color: $orange_bistre;
+      }
+    }
+
+    :last-child > article {
+      border-bottom: 1px solid $gray_gainsboro;
+    }
+  }
+
+  .announcement {
+    cursor: pointer;
+    color: $black;
+    text-decoration: none;
+    font-size: $fontsize-s;
+    transition: color 0.2s ease;
+    text-align: right;
+
+    &:hover {
+      color: $gray_nobel;
+    }
+  }
+}
