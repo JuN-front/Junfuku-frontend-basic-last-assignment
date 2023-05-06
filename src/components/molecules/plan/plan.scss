@@ -1,83 +1,103 @@
 @use "../../variables" as *;
 
-.set {
-  .plan {
-    text-align: center;
+.plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  & > .plan-daytime {
     width: 100%;
+  }
+
+  & > .plan-standard {
+    width: 100%;
+
+    ul {
+      border: 5px solid $orange_bistre;
+
+      li:nth-child(1) {
+        height: 59px;
+        background-color: $orange_bistre;
+        padding: 15px 8px;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px 12px;
 
     @media (max-width: $breakpoint-md) {
       margin-bottom: 24px;
     }
 
-    .options {
-      background-color: $orange_zorba;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-
-      h3 {
-        color: $white;
-        font-size: $fontsize-l;
-        margin-bottom: 0;
-      }
-    }
-
-    .decoration {
+    li {
+      padding: 20px 8px;
+      text-align: center;
+      margin: -1px 0px;
       border: 1px solid $gray_gainsboro;
-      display: flex;
+    }
 
-      .price {
+    li:nth-child(1) {
+      height: 69px;
+      color: $white;
+      font-size: $fontsize-l;
+      font-weight: 700;
+      line-height: 29px;
+      background-color: $orange_zorba;
+      margin: 0px;
+      border: none;
+    }
+
+    li:nth-child(2) {
+      height: 142px;
+      background-color: $gray_desertStorm;
+
+      .plan-price {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
         color: $orange_bistre;
-        background-color: $gray_desertStorm;
-        font-size: $fontsize-xxl;
-        padding: 24px 0;
-        height: 142px;
         font-weight: 700;
+        gap: 4px;
+        margin: 0px 0px 16px;
 
-        h3 {
-          color: $orange_bistre;
-          font-size: $fontsize-xxl;
-          margin: 0;
-          text-align: center;
-        }
-        .yen {
+        .plan-price-mark {
           font-size: $fontsize-l;
-          margin-right: 4px;
+          line-height: 29px;
         }
 
-        .monthly {
-          font-size: $fontsize-s;
-          font-weight: 400;
-          color: $black;
-          margin: 0;
+        .plan-price-yen {
+          font-size: $fontsize-xxl;
+          line-height: 58px;
+        }
+
+        .plan-price-mark,
+        .plan-price-yen {
+          margin: 0px;
         }
       }
 
-      .detail {
-        .list {
-          padding: 0px;
-          margin: 0;
-          font-size: $fontsize-s;
-
-          .list-items {
-            list-style: none;
-            padding: 20px;
-            border-top: 1px solid $gray_gainsboro;
-            background-color: $white;
-          }
-        }
+      .text {
+        color: $black;
+        font-size: $fontsize-s;
+        margin: 0px;
       }
     }
-  }
-}
 
-.plan:nth-child(even) {
-  outline: 5px solid $orange_bistre;
-  outline-offset: -5px;
-
-  .options {
-    background-color: $orange_bistre;
+    li:nth-child(n + 3) {
+      height: auto;
+      background-color: $white;
+      padding: 20px 10px;
+      overflow-wrap: break-word;
+    }
   }
 }
