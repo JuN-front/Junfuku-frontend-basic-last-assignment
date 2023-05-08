@@ -20,7 +20,7 @@
       .title {
         font-family: $fontfamily-mincho;
         font-size: $fontsize-xl;
-        line-height: 52px;
+        line-height: 41px;
         margin: 0;
         position: absolute;
         top: 50%;
@@ -30,7 +30,7 @@
         writing-mode: vertical-rl;
 
         @media screen and(max-width:$breakpoint-lg) {
-          line-height: 29px;
+          line-height: 25px;
           font-size: $fontsize-l;
         }
       }
