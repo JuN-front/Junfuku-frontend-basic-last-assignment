@@ -20,7 +20,7 @@
       h2 {
         font-family: $fontfamily-mincho;
         font-size: $fontsize-xl;
-        line-height: 41px;
+        line-height: 46px;
         margin: 0;
         position: absolute;
         top: 50%;
@@ -37,10 +37,11 @@
     }
   }
   .message {
+    width: 992px;
     color: $white;
     background-color: $black;
     padding: 32px 20px;
-    left: 136px;
+    align-items: center;
 
     @media screen and(max-width:$breakpoint-lg) {
       padding: 52px 20px;
