@@ -39,6 +39,10 @@
   .message {
     color: $white;
     background-color: $black;
-    padding: 52px 20px;
+    padding: 32px 20px;
+
+    @media screen and(max-width:$breakpoint-lg) {
+      padding: 52px 20px;
+    }
   }
 }
