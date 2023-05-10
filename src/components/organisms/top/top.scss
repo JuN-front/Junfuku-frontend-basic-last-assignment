@@ -13,11 +13,11 @@
       }
     }
     .front-message {
-      padding: 0;
+      padding: 0px 0px 10px;
       display: flex;
       align-items: left;
 
-      .title {
+      h2 {
         font-family: $fontfamily-mincho;
         font-size: $fontsize-xl;
         line-height: 41px;
@@ -36,9 +36,10 @@
       }
     }
   }
-  .advertisement {
+  .message {
     color: $white;
     background-color: $black;
     font-size: $fontsize-m;
+    padding: 52px 20px;
   }
 }
