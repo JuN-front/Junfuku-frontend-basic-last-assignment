@@ -39,9 +39,15 @@
   .advertisement {
     background-color: $black;
     padding: 50px 20px;
+    padding-top: 67px;
+    padding-left: 136px;
+    padding-right: 136px;
 
     @media screen and(max-width:$breakpoint-lg) {
       padding: 32px 20px;
+      padding-top: 170px;
+      padding-left: 12px;
+      padding-right: 12px;
     }
 
     .message {
