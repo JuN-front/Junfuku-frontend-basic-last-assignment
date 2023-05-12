@@ -3,7 +3,7 @@
 .message {
   font-weight: 400;
   text-align: center;
-  padding: 32px 156px;
+  padding: 52px 20px;
 
   h2 {
     font-family: $fontfamily-mincho;
@@ -19,7 +19,7 @@
   }
 
   @media (max-width: $breakpoint-lg) {
-    padding: 52px 36px;
+    padding: 32px 156px;
 
     h2 {
       font-size: $fontsize-l;
