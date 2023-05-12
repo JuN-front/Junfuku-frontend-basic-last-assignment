@@ -53,6 +53,15 @@
     .message {
       color: $white;
       align-items: center;
+      padding-top: 67px;
+      padding-left: 136px;
+      padding-right: 136px;
+
+      @media screen and(max-width:$breakpoint-lg) {
+        padding-top: 170px;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
     }
   }
 }
