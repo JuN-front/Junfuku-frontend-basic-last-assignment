@@ -15,6 +15,7 @@
     font-size: $fontsize-s;
     line-height: 2.5;
     margin: 0;
+    text-align: center;
   }
 
   @media (max-width: $breakpoint-lg) {
@@ -27,6 +28,7 @@
 
     p {
       line-height: 2;
+      text-align: center;
     }
   }
 }
