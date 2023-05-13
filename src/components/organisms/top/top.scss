@@ -40,22 +40,15 @@
   }
   .advertisement {
     background-color: $black;
+    padding: 32px 20px;
+
+    @media screen and(max-width:$breakpoint-lg) {
+      padding: 52px 20px;
+    }
 
     .message {
       color: $white;
       align-items: center;
-
-      @media screen and(max-width:$breakpoint-lg) {
-        padding: 52px 20px;
-        margin-left: 16px;
-        margin-right: 16px;
-      }
-
-      @media screen and(max-width:$breakpoint-md) {
-        padding: 32px 20px;
-        margin-left: 136px;
-        margin-right: 136px;
-      }
     }
   }
 }
