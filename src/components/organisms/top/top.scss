@@ -19,10 +19,10 @@
       display: flex;
       align-items: left;
 
-      h2 {
+      .advertisement {
         font-family: $fontfamily-mincho;
         font-size: $fontsize-xl;
-        line-height: 36px;
+        line-height: 51px;
         margin: 0;
         color: $white;
         position: absolute;
@@ -30,6 +30,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         writing-mode: vertical-rl;
+        white-space: nowrap;
 
         @media screen and(max-width:$breakpoint-lg) {
           line-height: 36px;
@@ -38,16 +39,8 @@
       }
     }
   }
-  .advertisement {
+  .message {
     background-color: $black;
-    padding: 52px 20px;
-
-    @media screen and(max-width:$breakpoint-lg) {
-      padding: 32px 20px;
-    }
-
-    .message {
-      color: $white;
-    }
+    color: $white;
   }
 }
