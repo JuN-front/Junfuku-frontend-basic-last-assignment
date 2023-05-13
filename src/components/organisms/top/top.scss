@@ -24,12 +24,15 @@
         font-size: $fontsize-xl;
         line-height: 36px;
         margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         color: $white;
-        writing-mode: vertical-rl;
+
+        p {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          writing-mode: vertical-rl;
+        }
 
         @media screen and(max-width:$breakpoint-lg) {
           line-height: 36px;
@@ -49,13 +52,6 @@
     .message {
       color: $white;
       align-items: center;
-
-      p {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
     }
   }
 }
