@@ -40,12 +40,16 @@
     }
   }
 }
-.message {
-  background-color: $black;
-  color: $white;
-  padding: 52px 20px;
+.message-wrap {
+  width: 90%;
+  margin: 0 auto;
+  .message {
+    background-color: $black;
+    color: $white;
+    padding: 52px 20px;
 
-  @media (max-width: $breakpoint-lg) {
-    padding: 32px 20px;
+    @media (max-width: $breakpoint-lg) {
+      padding: 32px 20px;
+    }
   }
 }
