@@ -3,6 +3,7 @@
 
 .top {
   margin-bottom: 30px;
+  background-color: $black;
   .top-wrap {
     position: relative;
 
@@ -41,7 +42,7 @@
   }
 }
 .message-wrap {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
   .message {
     background-color: $black;
