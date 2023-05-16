@@ -2,7 +2,6 @@
 @use "../../molecules/message/message.scss" as *;
 
 .top {
-  margin-bottom: 30px;
   background-color: $black;
   .top-wrap {
     position: relative;
@@ -51,10 +50,10 @@
     width: 100%;
     background-color: $black;
     color: $white;
-    padding: 52px 20px 52px 20px;
+    padding: 52px 20px;
 
     @media (max-width: $breakpoint-lg) {
-      padding: 32px 20px 32px 20px;
+      padding: 32px 20px;
     }
   }
 }
