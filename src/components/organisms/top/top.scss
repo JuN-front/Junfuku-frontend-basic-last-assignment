@@ -43,9 +43,6 @@
 .container {
   margin: 0 auto;
 
-  @media (max-width: $breakpoint-lg) {
-    width: 580px;
-  }
   .message {
     width: 100%;
     background-color: $black;
