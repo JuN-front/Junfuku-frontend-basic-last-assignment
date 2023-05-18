@@ -37,11 +37,11 @@
 
   .main-body {
     background-color: $white_smoke;
+    padding: 32px 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px 35px;
 
     .introduction {
       font-family: $fontfamily-gothic;
