@@ -1,35 +1,37 @@
 @use "../../variables" as *;
 
-.message{
-    font-weight: 400;
-    text-align: center;
-    padding: 50px 20px;
+.message {
+  font-weight: 400;
+  text-align: center;
+  padding: 52px 20px;
+  color: $black;
 
-    h2{
-        font-family: $fontfamily-mincho;
-        font-size: $fontsize-xl;
-        line-height: 1.5;
-        margin-bottom: 10px;
-      }
+  h2 {
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-xl;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
 
-      p{
-        font-size: $fontsize-s;
-        line-height: 2.5;
-        margin: 0;
-      }
+  p {
+    font-size: $fontsize-s;
+    line-height: 2.5;
+    margin: 0;
+  }
 
-      @media (max-width: $breakpoint-lg) {
-        padding: 30px 20px;
+  @media (max-width: $breakpoint-lg) {
+    padding: 32px 20px;
 
-        h2{
-          font-size: $fontsize-l;
-          line-height: 1.5;
-          margin-bottom: 6px;
-        }
+    h2 {
+      font-size: $fontsize-l;
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
 
-        p{
-          line-height: 2.0;
-        }
-}
-
+    p {
+      line-height: 2;
+      margin: 0;
+      font-size: $fontsize-s;
+    }
+  }
 }

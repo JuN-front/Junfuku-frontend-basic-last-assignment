@@ -1,0 +1,56 @@
+@use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
+
+.top {
+  background-color: $black;
+  .top-wrap {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      @media screen and (max-width: $breakpoint-lg) {
+        height: 360px;
+      }
+    }
+    .front-message {
+      padding: 0;
+      display: flex;
+      align-items: left;
+
+      .advertisement {
+        font-family: $fontfamily-mincho;
+        font-size: $fontsize-xl;
+        line-height: 51px;
+        margin: 0;
+        color: $white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        writing-mode: vertical-rl;
+        white-space: nowrap;
+
+        @media screen and(max-width:$breakpoint-lg) {
+          line-height: 36px;
+          font-size: $fontsize-l;
+        }
+      }
+    }
+  }
+}
+.container {
+  margin: 0 auto;
+
+  .message {
+    width: 100%;
+    background-color: $black;
+    color: $white;
+    padding: 52px 20px;
+
+    @media (max-width: $breakpoint-lg) {
+      padding: 32px 20px;
+    }
+  }
+}
