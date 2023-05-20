@@ -2,18 +2,20 @@
 @use "../../molecules/card/card.scss" as *;
 
 .cards {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
-  @media (max-width: $breakpoint-md) {
-    display: block;
-    margin-bottom: 0px;
-  }
-  .card {
-    width: 31%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
     @media (max-width: $breakpoint-md) {
-      width: 100%;
-      margin-bottom: 40px;
+      display: block;
+      margin-bottom: 0px;
+    }
+    .card {
+      width: 31%;
+      @media (max-width: $breakpoint-md) {
+        width: 100%;
+        margin-bottom: 40px;
+      }
     }
   }
 }
