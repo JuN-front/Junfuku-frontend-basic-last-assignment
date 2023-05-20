@@ -7,16 +7,13 @@
   margin-bottom: 100px;
   @media (max-width: $breakpoint-md) {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
   .card {
     width: 31%;
     @media (max-width: $breakpoint-md) {
       width: 100%;
       margin-bottom: 40px;
-    }
-    .special {
-      margin-bottom: 30px;
     }
   }
 }
