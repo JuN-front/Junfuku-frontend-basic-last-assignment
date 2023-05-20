@@ -1,53 +1,18 @@
 @use "../../variables" as *;
 
-.card {
-  width: auto;
-
-  .card {
-    position: relative;
-    overflow: hidden;
-
-    .title-card {
-      position: absolute;
-      font-size: $fontsize-l;
-      font-weight: 700;
-      color: $orange_bistre;
-      background-color: $white;
-      width: 150px;
-      height: 150px;
-      top: 0px;
-      left: 0px;
-      padding: 0px 0px 0px 6px;
-      margin: 0px;
-      clip-path: polygon(0 0, 100% 0, 0 100%);
-      z-index: 1;
-    }
-
-    img {
-      transition: 0.5s ease;
-
-      &:hover {
-        transform: scale(1.2);
-        @media (max-width: $breakpoint-md) {
-          transform: none;
-        }
-      }
-    }
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  @media (max-width: $breakpoint-md) {
+    display: block;
+    margin-bottom: 0;
   }
-
-  .main-body {
-    background-color: $white_smoke;
-    padding: 32px 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .introduction {
-      font-family: $fontfamily-gothic;
-      font-size: $fontsize-s;
-      line-height: 33px;
-      margin: 0px 0px 30px;
+  .card {
+    width: 31%;
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      margin-bottom: 40px;
     }
   }
 }
