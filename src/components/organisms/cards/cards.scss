@@ -1,13 +1,13 @@
 @use "../../variables" as *;
 @use "../../molecules/card/card.scss" as *;
 
-.container {
+.cards {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
   @media (max-width: $breakpoint-md) {
     display: block;
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
   .card {
     width: 31%;
