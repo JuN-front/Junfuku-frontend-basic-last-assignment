@@ -6,14 +6,14 @@
   padding: 52px 20px;
   color: $black;
 
-  h2 {
+  .title {
     font-family: $fontfamily-mincho;
     font-size: $fontsize-xl;
     line-height: 1.5;
     margin-bottom: 10px;
   }
 
-  p {
+  .text {
     font-size: $fontsize-s;
     line-height: 2.5;
     margin: 0;
@@ -22,13 +22,13 @@
   @media (max-width: $breakpoint-lg) {
     padding: 32px 20px;
 
-    h2 {
+    .title {
       font-size: $fontsize-l;
       line-height: 1.5;
       margin-bottom: 6px;
     }
 
-    p {
+    .text {
       line-height: 2;
       margin: 0;
       font-size: $fontsize-s;
