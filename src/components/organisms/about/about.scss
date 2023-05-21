@@ -1,34 +1,16 @@
-@use "../../variables" as *;
-
 .about-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  max-width: 960px;
+  padding: 0px;
+  margin: 0px auto 30px;
+  background-color: $white_smoke;
 
   @media (max-width: $breakpoint-lg) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .imgs {
-    display: flex;
-
-    @media (max-width: $breakpoint-lg) {
-      flex-wrap: wrap;
-    }
-
-    .images {
-      width: 25%;
-      height: auto;
-      @media (max-width: $breakpoint-lg) {
-        width: 50%;
-      }
-    }
+    max-width: 720px;
+    margin-bottom: 100px;
   }
 
   .message {
     margin: 0 auto;
-    width: 100%;
-    background-color: $white_smoke;
 
     .about-title {
       color: $orange_bistre;
