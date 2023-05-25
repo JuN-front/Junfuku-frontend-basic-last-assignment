@@ -1,31 +1,39 @@
 @use "../../variables" as *;
+@use "../../atoms/button/button.scss" as *;
+@use "../../molecules/plan/plan.scss" as *;
+@use "../../molecules/message/message.scss" as *;
 
 .plans {
-  .title-message {
+  margin-top: 56px;
+  .message {
     padding-top: 0;
     padding-bottom: 56px;
-    h2 {
+    .title {
       font-size: $fontsize-l;
       color: $orange_bistre;
+      margin-bottom: 6px;
     }
-    p {
+    .text {
       font-size: $fontsize-s;
     }
   }
-  .plan {
-    margin-bottom: 24px;
-    @media (max-width: $breakpoint-lg) {
-      margin-bottom: 40px;
-      margin-right: 30px;
-      &:nth-child(3) {
-        margin-right: 0;
+  .plan-set {
+    .plan {
+      margin-bottom: 24px;
+      @media (min-width: $breakpoint-md) {
+        margin-bottom: 40px;
+        margin-right: 30px;
+        &:nth-child(3) {
+          margin-right: 0;
+        }
       }
     }
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      gap: 30px;
+    }
   }
-  @media (max-width: $breakpoint-lg) {
-    display: flex;
-  }
-  .btn-wrap {
+  .button-border {
     display: flex;
     justify-content: center;
     .button {
