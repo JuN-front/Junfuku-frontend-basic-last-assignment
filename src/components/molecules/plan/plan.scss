@@ -26,8 +26,6 @@
   }
 
   .decoration {
-    border: 1px solid $gray_gainsboro;
-
     .price {
       background-color: $gray_desertStorm;
       padding: 24px 0;
@@ -57,6 +55,7 @@
     }
 
     .detail {
+      border: 1px solid $gray_gainsboro;
       .list {
         padding: 0px;
         margin: 0;
