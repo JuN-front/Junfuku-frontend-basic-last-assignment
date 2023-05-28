@@ -77,5 +77,9 @@
 
   .options {
     background-color: $orange_bistre;
+
+    .list-items:last-child {
+      padding-bottom: 15px;
+    }
   }
 }
