@@ -2,35 +2,42 @@
 
 .plans {
   margin-top: 56px;
+
   .message {
     padding-top: 0;
     padding-bottom: 56px;
+
     h2 {
-      font-size: $fontsize-l;
       color: $orange_bistre;
+      font-size: $fontsize-l;
       margin-bottom: 6px;
     }
+
     p {
       font-size: $fontsize-s;
     }
   }
+
   .plan-set {
     .plan {
       margin-bottom: 24px;
+
       @media (min-width: $breakpoint-md) {
-        margin-bottom: 40px;
         margin-right: 30px;
+        margin-bottom: 40px;
         &:nth-child(3) {
           margin-right: 0;
         }
       }
     }
+
     @media (min-width: $breakpoint-md) {
-      display: flex;
       gap: 30px;
+      display: flex;
     }
   }
-  .btn-wrap {
+
+  .button-border {
     display: flex;
     justify-content: center;
     .modBtn {
