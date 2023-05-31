@@ -26,6 +26,7 @@
   }
 
   .decoration {
+    border: 1px solid $gray_gainsboro;
     .price {
       background-color: $gray_desertStorm;
       padding: 24px 0;
@@ -37,7 +38,7 @@
         color: $orange_bistre;
         font-size: $fontsize-xxl;
         font-weight: 700;
-        margin: 0;
+        margin-bottom: 16px;
         text-align: center;
       }
 
@@ -59,11 +60,11 @@
         padding: 0px;
         margin: 0;
         font-size: $fontsize-s;
-        border-top: 1px solid $gray_gainsboro;
 
         .list-items {
+          border-top: none;
           list-style: none;
-          border-top: 1px solid $gray_gainsboro;
+          border: 1px solid $gray_gainsboro;
           padding: 20px;
           background-color: $white;
         }
@@ -74,7 +75,7 @@
 
 .plan:nth-child(even) {
   border: 5px solid $orange_bistre;
-
+  outline-offset: -5px;
   .options {
     background-color: $orange_bistre;
     padding-top: 15px;
