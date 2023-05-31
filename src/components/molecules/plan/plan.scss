@@ -55,16 +55,16 @@
     }
 
     .detail {
-      border: 1px solid $gray_gainsboro;
       .list {
         padding: 0px;
         margin: 0;
         font-size: $fontsize-s;
+        border-top: 1px solid $gray_gainsboro;
 
         .list-items {
           list-style: none;
-          padding: 20px;
           border-top: 1px solid $gray_gainsboro;
+          padding: 20px;
           background-color: $white;
         }
       }
@@ -78,9 +78,8 @@
   .options {
     background-color: $orange_bistre;
     padding-top: 15px;
-
-    .list-items:last-child {
-      padding-bottom: 15px;
-    }
+  }
+  .list-items:last-child {
+    padding-bottom: 15px;
   }
 }
