@@ -73,7 +73,7 @@
 }
 
 .plan:nth-child(even) {
-  outline: 5px solid $orange_bistre;
+  border: 5px solid $orange_bistre;
 
   .options {
     background-color: $orange_bistre;
