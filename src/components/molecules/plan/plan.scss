@@ -1,87 +1,65 @@
 @use "../../variables" as *;
 
-.plan {
-  text-align: center;
-  width: 100%;
-
-  @media (max-width: $breakpoint-md) {
-    margin-bottom: 24px;
-  }
-
-  .options {
-    background-color: $orange_zorba;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-
-    h3 {
-      color: $white;
-      font-size: $fontsize-l;
-      margin: 0;
-      font-weight: 700;
-      text-align: center;
+.plan-assets {
+  .plan {
+    text-align: center;
+    width: 100%;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 24px;
     }
-  }
-
-  .decoration {
-    border: 1px solid $gray_gainsboro;
-
-    .price {
-      background-color: $gray_desertStorm;
-      padding: 24px 0;
-      font-weight: 700;
+    .plan-text {
+      background-color: $orange_zorba;
+      padding: 20px 0;
+      display: flex;
       align-items: center;
       justify-content: center;
-
       h3 {
-        color: $orange_bistre;
-        font-size: $fontsize-xxl;
-        font-weight: 700;
-        margin: 0;
-        text-align: center;
-      }
-
-      .yen {
+        color: $white;
+        margin-bottom: 0;
         font-size: $fontsize-l;
-        margin-right: 4px;
-      }
-
-      .monthly {
-        font-size: $fontsize-s;
-        font-weight: 400;
-        color: $black;
-        margin: 0;
       }
     }
-
-    .detail {
-      .list {
-        padding: 0px;
-        margin: 0;
-        font-size: $fontsize-s;
-
-        .list-items {
-          list-style: none;
-          padding: 20px;
-          border-top: 1px solid $gray_gainsboro;
-          background-color: $white;
+    .plan-wrap {
+      border: 1px solid $gray_gainsboro;
+      .plan-price {
+        background-color: $gray_desertStorm;
+        padding: 24px 0;
+        height: 142px;
+        h3 {
+          font-size: $fontsize-xxl;
+          font-weight: 700;
+          color: $orange_bistre;
+          margin-bottom: 16px;
+          .dollar {
+            font-size: $fontsize-l;
+            margin-right: 4px;
+          }
+        }
+        .monthly {
+          font-size: $fontsize-s;
+          font-weight: 400;
+          color: $black;
+        }
+      }
+      .plan-detail {
+        .list {
+          padding: 0px;
+          margin: 0;
+          font-size: $fontsize-s;
+          .list-item {
+            list-style: none;
+            padding: 20px;
+            border-top: 1px solid $gray_gainsboro;
+          }
         }
       }
     }
   }
 }
-
 .plan:nth-child(even) {
-  border: 5px solid $orange_bistre;
-
-  .options {
+  outline: 5px solid $orange_bistre;
+  outline-offset: -5px;
+  .plan-text {
     background-color: $orange_bistre;
-    padding-top: 15px;
   }
-}
-
-.list-items:last-child {
-  padding-bottom: 15px;
 }

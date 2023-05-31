@@ -2,23 +2,24 @@
 
 .plans {
   margin-top: 56px;
-  .message {
+  .planword {
     padding-top: 0;
     padding-bottom: 56px;
-    .title {
+    h2 {
       font-size: $fontsize-l;
       color: $orange_bistre;
       margin-bottom: 6px;
     }
-    .text {
+    p {
       font-size: $fontsize-s;
     }
   }
-  .plan-set {
+  .plan-assets {
     .plan {
       margin-bottom: 24px;
       @media (min-width: $breakpoint-md) {
         margin-bottom: 40px;
+        margin-right: 30px;
         &:nth-child(3) {
           margin-right: 0;
         }
@@ -29,10 +30,9 @@
       gap: 30px;
     }
   }
-  .button-border {
-    justify-content: center;
+  .btn-wrap {
     display: flex;
-    direction: column;
+    justify-content: center;
     .button {
       margin-bottom: 35px;
     }
