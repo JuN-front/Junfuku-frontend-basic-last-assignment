@@ -62,9 +62,11 @@
         font-size: $fontsize-s;
 
         .list-items {
-          border-top: none;
           list-style: none;
-          border: 1px solid $gray_gainsboro;
+          border-right: 1px solid $gray_gainsboro;
+          border-left: 1px solid $gray_gainsboro;
+          border-bottom: 1px solid $gray_gainsboro;
+          border-top: none;
           padding: 20px;
           background-color: $white;
         }
