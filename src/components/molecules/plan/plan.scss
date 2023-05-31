@@ -9,9 +9,9 @@
   }
 
   .options {
+    display: flex;
     background-color: $orange_zorba;
     padding: 20px;
-    display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
@@ -71,7 +71,6 @@
     }
   }
 }
-
 .plan:nth-child(even) {
   border: 5px solid $orange_bistre;
   .options {
