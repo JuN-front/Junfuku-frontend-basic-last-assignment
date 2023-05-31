@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 
-.plan-assets {
+.plan-set {
   .plan {
     text-align: center;
     width: 100%;
@@ -30,7 +30,7 @@
           font-weight: 700;
           color: $orange_bistre;
           margin-bottom: 16px;
-          .dollar {
+          .yen {
             font-size: $fontsize-l;
             margin-right: 4px;
           }

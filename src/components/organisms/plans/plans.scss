@@ -2,7 +2,7 @@
 
 .plans {
   margin-top: 56px;
-  .planword {
+  .message {
     padding-top: 0;
     padding-bottom: 56px;
     h2 {
@@ -14,7 +14,7 @@
       font-size: $fontsize-s;
     }
   }
-  .plan-assets {
+  .plan-set {
     .plan {
       margin-bottom: 24px;
       @media (min-width: $breakpoint-md) {
@@ -33,7 +33,7 @@
   .btn-wrap {
     display: flex;
     justify-content: center;
-    .button {
+    .modBtn {
       margin-bottom: 35px;
     }
   }
