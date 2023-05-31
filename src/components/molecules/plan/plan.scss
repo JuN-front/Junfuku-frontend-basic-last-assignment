@@ -9,9 +9,9 @@
   }
 
   .options {
-    display: flex;
     background-color: $orange_zorba;
     padding: 20px;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
@@ -27,6 +27,7 @@
 
   .decoration {
     border: 1px solid $gray_gainsboro;
+
     .price {
       background-color: $gray_desertStorm;
       padding: 24px 0;
@@ -38,7 +39,7 @@
         color: $orange_bistre;
         font-size: $fontsize-xxl;
         font-weight: 700;
-        margin-bottom: 16px;
+        margin: 0;
         text-align: center;
       }
 
@@ -63,21 +64,19 @@
 
         .list-items {
           list-style: none;
-          border: 1px solid $gray_gainsboro;
           padding: 20px;
+          border-top: 1px solid $gray_gainsboro;
           background-color: $white;
         }
       }
     }
   }
 }
-.plan:nth-child(even) {
-  border: 5px solid $orange_bistre;
+
+.plan &:nth-child(even) {
+  outline: 5px solid $orange_bistre;
+
   .options {
     background-color: $orange_bistre;
-    padding-top: 15px;
-  }
-  .list-items:last-child {
-    padding-bottom: 15px;
   }
 }
