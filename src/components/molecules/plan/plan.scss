@@ -63,10 +63,7 @@
 
         .list-items {
           list-style: none;
-          border-right: 1px solid $gray_gainsboro;
-          border-left: 1px solid $gray_gainsboro;
-          border-bottom: 1px solid $gray_gainsboro;
-          border-top: none;
+          border: 1px solid $gray_gainsboro;
           padding: 20px;
           background-color: $white;
         }
