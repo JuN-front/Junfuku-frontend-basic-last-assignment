@@ -3,8 +3,9 @@
 .templates {
   display: flex;
   flex-direction: column;
-  gap: 38px;
+  gap: 35px;
   padding: 56px 0px;
+  justify-content: space-between;
 
   .news {
     margin-bottom: 0px;
@@ -14,7 +15,9 @@
     margin-bottom: 0px;
 
     .event-card {
-      .caption {
+      .event-caption {
+        padding: 0px 0px 8px 0px;
+        font-size: $fontsize-m;
         h3 {
           font-weight: 400;
         }
@@ -24,14 +27,14 @@
       margin-bottom: 0px;
     }
     .news-and-events-more {
-      margin-top: 30px;
+      padding-top: 30px;
     }
   }
 
   @media screen and(min-width:$breakpoint-lg) {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 139px;
 
     .news {
       min-width: 0px;
@@ -47,7 +50,10 @@
       .event-list {
         .event-card {
           a {
-            height: 141px;
+            height: 136px;
+            .event-caption {
+              padding: 10px 20px 16px 20px;
+            }
           }
         }
       }
