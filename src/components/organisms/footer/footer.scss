@@ -53,6 +53,8 @@
         text-decoration: none;
         color: $black;
         transition: 0.2s ease;
+        font-size: $fontsize-s;
+
         &:hover {
           color: $orange_bistre;
         }
