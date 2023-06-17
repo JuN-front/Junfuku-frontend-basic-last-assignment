@@ -95,23 +95,16 @@
       grid-template-columns: 1fr 1fr;
       text-align: left;
       flex-wrap: wrap;
+      gap: 8px;
 
       li {
         border-left: 0 solid;
         padding: 0px;
-        padding-bottom: 8px;
-        width: 50%;
 
         a {
           line-height: 20px;
           font-size: $fontsize-s;
         }
-      }
-      li:nth-child(7) {
-        padding-bottom: 0;
-      }
-      li:nth-child(8) {
-        padding-bottom: 0;
       }
     }
   }
