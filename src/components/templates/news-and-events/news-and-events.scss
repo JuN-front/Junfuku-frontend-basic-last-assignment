@@ -5,7 +5,7 @@
   flex-direction: column;
   gap: 35px;
   padding: 56px 0px;
-  justify-content: space-between;
+  background-color: $white_smoke;
 
   .news {
     margin-bottom: 0px;
@@ -50,10 +50,7 @@
       .event-list {
         .event-card {
           a {
-            height: 136px;
-            .event-caption {
-              padding: 10px 20px 16px 20px;
-            }
+            height: 141px;
           }
         }
       }
