@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 @use "../../molecules/message/message.scss" as *;
 
-.about-container {
+.about {
   padding: 100px 0;
   @media (max-width: $breakpoint-lg) {
     padding: 40px 0;
