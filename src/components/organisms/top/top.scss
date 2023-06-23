@@ -1,5 +1,4 @@
 @use "../../variables" as *;
-@use "../../molecules/message/message.scss" as *;
 
 .top {
   background-color: $black;
@@ -48,9 +47,7 @@
     background-color: $black;
     color: $white;
     padding: 52px 20px;
-    h2 {
-      font-style: $fontfamily-gothic;
-    }
+    font-style: $fontfamily-mincho;
 
     @media (max-width: $breakpoint-lg) {
       padding: 32px 20px;
