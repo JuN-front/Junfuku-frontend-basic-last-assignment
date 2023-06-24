@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 .top {
+  position: absolute;
   z-index: 1;
   background-color: $black;
   .top-wrap {
