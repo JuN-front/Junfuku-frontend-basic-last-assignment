@@ -30,6 +30,8 @@
     @media (min-width: $breakpoint-md) {
       gap: 30px;
       display: flex;
+      align-content: center;
+      flex-wrap: wrap;
     }
   }
 

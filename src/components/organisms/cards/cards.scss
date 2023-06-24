@@ -6,7 +6,7 @@
   justify-content: space-between;
   margin-bottom: 100px;
   gap: 24px;
-  align-items: start;
+  align-content: start;
   @media (max-width: $breakpoint-md) {
     display: block;
     margin-bottom: 40px;
