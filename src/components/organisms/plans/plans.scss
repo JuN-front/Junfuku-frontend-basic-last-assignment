@@ -15,6 +15,7 @@
   }
 
   .plan-set {
+    height: fit-content;
     .plan {
       margin-bottom: 24px;
 
@@ -29,6 +30,8 @@
     @media (min-width: $breakpoint-md) {
       gap: 30px;
       display: flex;
+      align-content: center;
+      align-items: flex-start;
     }
   }
 

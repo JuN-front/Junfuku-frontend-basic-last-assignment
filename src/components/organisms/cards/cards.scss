@@ -6,6 +6,8 @@
   justify-content: space-between;
   margin-bottom: 100px;
   gap: 24px;
+  flex-wrap: wrap;
+  align-items: stretch;
   @media (max-width: $breakpoint-md) {
     display: block;
     margin-bottom: 40px;
